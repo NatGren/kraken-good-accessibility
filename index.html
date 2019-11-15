@@ -11,32 +11,39 @@
 </head>
 <body>
 
-  <header class="book-ends max-length gutter pad-t-1-2 pad-b-1-2">
+  <ul class="skip-link">
+    <li><a href="main">Jump to main content</a></li>
+    <li><a href="nav">Jump to nav content</a></li>
+    <li><a href="footer">Jump to footer content</a></li>
+    <li><a href="banner">Jump to banner content</a></li>
+  </ul>
+
+  <header class="book-ends max-length gutter pad-t-1-2 pad-b-1-2" role="banner" tabindex="0" id="banner">
     <strong class="book-title giga not-bold">Twenty Thousand Leagues Under the Sea</strong>
     <p class="book-author push-0"><span class="book-author-by micro italic">by</span> <span class="mega">Jules Verne</span></p>
   </header>
 
-  <article class="max-length">
+  <article class="max-length" role="main" tabindex="0" id="main">
     <header class="chapter-ends chapter-name pad-t-1-2 pad-b-1-2 gutter push relative">
       <hgroup class="chapter-details">
         <h1 class="chapter-number not-bold push-0 italic kilo">Chapter XVIII</h1>
         <h2 class="chapter-title not-bold push-0 peta">The Poulps</h2>
       </hgroup>
-      <nav>
+      <nav class="no-print" role="navigation" tabindex="0" id="nav">
         <ul class="list-group-inline text-center push-0 pin-rc gutter-1-2">
           <li>
-            <a class="btn chapter-btn" href="chapter-xvii.html">
-              <i class="icon i-1"><svg><use xlink:href="images/icons.svg#prev"></use></svg></i>
+            <a class="btn chapter-btn" href="chapter-xvii.html" aria-label="Go to chapter 17">
+              <i class="icon i-1" role="presentation"><svg><use xlink:href="images/icons.svg#prev"></use></svg></i>
             </a>
           </li>
           <li>
-            <a class="btn chapter-btn" href="contents.html">
-              <i class="icon i-1"><svg><use xlink:href="images/icons.svg#contents"></use></svg></i>
+            <a class="btn chapter-btn" href="contents.html" aria-label="Go to chapter 17">
+              <i class="icon i-1" role="presentation"><svg><use xlink:href="images/icons.svg#contents"></use></svg></i>
             </a>
           </li>
           <li>
-            <a class="btn chapter-btn" href="chapter-xix.html">
-              <i class="icon i-1"><svg><use xlink:href="images/icons.svg#next"></use></svg></i>
+            <a class="btn chapter-btn" href="chapter-xix.html" aria-label="Go to chapter 17">
+              <i class="icon i-1" role="presentation"><svg><use xlink:href="images/icons.svg#next"></use></svg></i>
             </a>
           </li>
         </ul>
@@ -116,18 +123,18 @@
       <nav>
         <ul class="list-group-inline text-center push-0">
           <li>
-            <a class="btn chapter-btn" href="chapter-xvii.html">
-              <i class="icon i-1"><svg><use xlink:href="images/icons.svg#prev"></use></svg></i>
+            <a class="btn chapter-btn" href="chapter-xvii.html" aria-label="Go to chapter 17">
+              <i class="icon i-1" role="presentation"><svg><use xlink:href="images/icons.svg#prev"></use></svg></i>
             </a>
           </li>
           <li>
-            <a class="btn chapter-btn" href="contents.html">
-              <i class="icon i-1"><svg><use xlink:href="images/icons.svg#contents"></use></svg></i>
+            <a class="btn chapter-btn" href="contents.html" aria-label="Go to chapter 17">
+              <i class="icon i-1" role="presentation"><svg><use xlink:href="images/icons.svg#contents"></use></svg></i>
             </a>
           </li>
           <li>
-            <a class="btn chapter-btn" href="chapter-xix.html">
-              <i class="icon i-1"><svg><use xlink:href="images/icons.svg#next"></use></svg></i>
+            <a class="btn chapter-btn" href="chapter-xix.html" aria-label="Go to chapter 17">
+              <i class="icon i-1" role="presentation"><svg><use xlink:href="images/icons.svg#next"></use></svg></i>
             </a>
           </li>
         </ul>
@@ -135,7 +142,7 @@
     </footer>
   </article>
 
-  <footer class="book-ends text-center max-length gutter pad-t-1-2 pad-b-1-2">
+  <footer class="book-ends text-center max-length gutter pad-t-1-2 pad-b-1-2" role="contentinfo" tabindex="0" id="footer">
     <small class="micro">Twenty Thousand Leagues Under the Sea © Jules Verne, 1870.</small>
   </footer>
 
